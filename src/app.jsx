@@ -5,6 +5,7 @@ import Designer from "./pages/Designer";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
+import Product from "./pages/Product";
 
 import Navbar from "./components/Navbar";
 
@@ -20,33 +21,39 @@ return(
 <Routes>
 
 
-<Route 
-path="/" 
+<Route
+path="/"
 element={<Home/>}
 />
 
 
-<Route 
-path="/designer" 
+<Route
+path="/designer"
 element={<Designer/>}
 />
 
 
-<Route 
-path="/cart" 
+<Route
+path="/cart"
 element={<Cart/>}
 />
 
 
-<Route 
-path="/checkout" 
+<Route
+path="/checkout"
 element={<Checkout/>}
 />
 
 
-<Route 
-path="/login" 
+<Route
+path="/login"
 element={<Login/>}
+/>
+
+
+<Route
+path="/product"
+element={<Product/>}
 />
 
 
