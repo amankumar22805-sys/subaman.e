@@ -25,12 +25,12 @@ placeholder="Enter Delivery Address"
 />
 
 
-<button
-className="bg-pink-600 text-white p-3 rounded mt-5 w-full"
+<a
+href="/checkout"
+className="bg-pink-600 text-white p-3 rounded mt-5 w-full block text-center"
 >
 Pay Now (Prepaid Only)
-</button>
-
+</a>
 
 </div>
 
