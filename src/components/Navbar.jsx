@@ -1,45 +1,48 @@
-import {ShoppingCart, User} from "lucide-react";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
-export default function Navbar(){
+import Home from "./pages/Home";
+import Designer from "./pages/Designer";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import Login from "./pages/Login";
+import Product from "./pages/Product";
+import Admin from "./pages/Admin";
+
+import Navbar from "./components/Navbar";
+
+
+function App(){
 
 return(
 
-<nav className="bg-pink-600 text-white p-4 flex justify-between items-center gap-3">
+<BrowserRouter>
 
-<h1 className="text-2xl font-bold">
-SabAman.e
-</h1>
+<Navbar/>
 
-
-<input
-
-className="w-1/2 p-2 rounded text-black"
-
-placeholder="Search T-shirt, Mug, Cap..."
-
-/>
+<Routes>
 
 
-<div className="flex gap-4 items-center">
+<Route path="/" element={<Home/>}/>
+
+<Route path="/designer" element={<Designer/>}/>
+
+<Route path="/cart" element={<Cart/>}/>
+
+<Route path="/checkout" element={<Checkout/>}/>
+
+<Route path="/login" element={<Login/>}/>
+
+<Route path="/product" element={<Product/>}/>
+
+<Route path="/admin" element={<Admin/>}/>
 
 
-<a href="/login" className="flex gap-1 items-center">
-<User size={20}/>
-Login
-</a>
+</Routes>
 
-
-<a href="/cart" className="flex gap-1 items-center">
-<ShoppingCart size={20}/>
-Cart
-</a>
-
-
-</div>
-
-
-</nav>
+</BrowserRouter>
 
 )
 
 }
+
+export default App;
