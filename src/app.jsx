@@ -1,6 +1,7 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Designer from "./pages/Designer";
+import Cart from "./pages/Cart";
 import Navbar from "./components/Navbar";
 
 function App(){
@@ -16,6 +17,11 @@ function App(){
     <Route 
     path="/designer" 
     element={<Designer/>}
+    />
+
+    <Route 
+    path="/cart" 
+    element={<Cart/>}
     />
 
    </Routes>
