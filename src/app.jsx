@@ -2,32 +2,31 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Designer from "./pages/Designer";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import Navbar from "./components/Navbar";
 
 function App(){
- return(
-  <BrowserRouter>
 
-   <Navbar/>
+return(
+<BrowserRouter>
 
-   <Routes>
+<Navbar/>
 
-    <Route path="/" element={<Home/>}/>
+<Routes>
 
-    <Route 
-    path="/designer" 
-    element={<Designer/>}
-    />
+<Route path="/" element={<Home/>}/>
 
-    <Route 
-    path="/cart" 
-    element={<Cart/>}
-    />
+<Route path="/designer" element={<Designer/>}/>
 
-   </Routes>
+<Route path="/cart" element={<Cart/>}/>
 
-  </BrowserRouter>
- )
+<Route path="/checkout" element={<Checkout/>}/>
+
+</Routes>
+
+</BrowserRouter>
+)
+
 }
 
 export default App;
