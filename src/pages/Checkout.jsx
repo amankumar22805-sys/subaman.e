@@ -32,6 +32,7 @@ placeholder="Delivery Address"
 
 
 <button
+onClick={()=>alert("Payment Gateway Opening...")}
 className="bg-pink-600 text-white p-3 rounded mt-5 w-full"
 >
 Pay Now (Prepaid Only)
