@@ -2,22 +2,22 @@ const products=[
 {
 name:"Custom T-Shirt",
 price:"₹499",
-emoji:"👕"
+image:"https://via.placeholder.com/300x300?text=T-Shirt"
 },
 {
 name:"Custom Mug",
 price:"₹299",
-emoji:"☕"
+image:"https://via.placeholder.com/300x300?text=Mug"
 },
 {
 name:"Custom Cap",
 price:"₹399",
-emoji:"🧢"
+image:"https://via.placeholder.com/300x300?text=Cap"
 },
 {
 name:"Custom Cushion",
 price:"₹599",
-emoji:"🛋️"
+image:"https://via.placeholder.com/300x300?text=Cushion"
 }
 ]
 
@@ -32,19 +32,18 @@ return(
 <div className="bg-pink-600 text-white rounded p-8">
 
 <h1 className="text-3xl font-bold">
-SabAman.e
+SabAman.e Custom Store
 </h1>
 
 <p>
-Create your own custom products
+Create your own design
 </p>
 
 </div>
 
 
-
 <h2 className="text-2xl font-bold mt-6">
-Products
+Trending Products
 </h2>
 
 
@@ -53,12 +52,13 @@ Products
 
 {products.map((p)=>(
 
-<div className="bg-white shadow rounded p-5 text-center">
+<div className="bg-white shadow rounded p-4">
 
 
-<div className="text-6xl">
-{p.emoji}
-</div>
+<img 
+src={p.image}
+className="w-full"
+/>
 
 
 <h3 className="font-bold mt-3">
@@ -73,7 +73,7 @@ Products
 
 <a
 href="/product"
-className="bg-pink-600 text-white p-2 rounded block mt-3"
+className="bg-pink-600 text-white p-2 rounded block text-center mt-3"
 >
 View Product
 </a>
@@ -85,6 +85,7 @@ View Product
 
 
 </div>
+
 
 </div>
 
