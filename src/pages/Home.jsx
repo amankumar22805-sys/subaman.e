@@ -32,11 +32,11 @@ return(
 <div className="bg-pink-600 text-white rounded p-8">
 
 <h1 className="text-3xl font-bold">
-Design Your Own Products
+SabAman.e
 </h1>
 
-<p className="mt-2">
-Upload photo and create your custom item
+<p>
+Create your own custom products
 </p>
 
 </div>
@@ -44,46 +44,11 @@ Upload photo and create your custom item
 
 
 <h2 className="text-2xl font-bold mt-6">
-Categories
+Products
 </h2>
 
 
-<div className="grid grid-cols-4 gap-3 mt-4">
-
-<div className="bg-white p-5 rounded text-center">
-👕
-<br/>
-T-Shirt
-</div>
-
-<div className="bg-white p-5 rounded text-center">
-☕
-<br/>
-Mug
-</div>
-
-<div className="bg-white p-5 rounded text-center">
-🧢
-<br/>
-Cap
-</div>
-
-<div className="bg-white p-5 rounded text-center">
-🛋️
-<br/>
-Cushion
-</div>
-
-</div>
-
-
-
-<h2 className="text-2xl font-bold mt-6">
-Trending Products
-</h2>
-
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-4">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-5">
 
 
 {products.map((p)=>(
@@ -91,7 +56,7 @@ Trending Products
 <div className="bg-white shadow rounded p-5 text-center">
 
 
-<div className="text-5xl">
+<div className="text-6xl">
 {p.emoji}
 </div>
 
@@ -107,13 +72,10 @@ Trending Products
 
 
 <a
-
-href="/designer"
-
+href="/product"
 className="bg-pink-600 text-white p-2 rounded block mt-3"
-
 >
-Customize
+View Product
 </a>
 
 
@@ -123,7 +85,6 @@ Customize
 
 
 </div>
-
 
 </div>
 
